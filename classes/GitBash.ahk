@@ -7,8 +7,8 @@ class GitBash {
 		StringReplace, parsedPath, withSlash, `:, , All
 		title := "MINGW64:" + parsedPath
 		GitBash.title := title
-		
-		run "D:\Program Files (x86)\Git\git-bash.exe" %command%
+
+		run "C:\Program Files (x86)\Git\git-bash.exe" %command%
 		WinWait, %title%
 		return title
 	}
